@@ -9,11 +9,11 @@
     <hr>
     <a href="index.html" >Home</a> |
     <a href="contact.html" >Contact</a> |
-    <a href="signUp.html" target="_blank">sign Up</a>
+    <a href="gallery.html">Gallery</a>
     <hr>
     <table cellspacing="50">
         <tr>
-            <td><img src="./images/br.jpeg" alt="car image"></td>
+            <td><img height="300" width="200" src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80" alt="car image"></td>
             <td><h1>Nabek Abebe</h1>
                 <h3>Student at Addis Ababa Universit</h3>
                 <p>My nabe is Nabek A. I am an <strong>expert</strong>  web developer</p>
@@ -22,12 +22,63 @@
                 aperiam quas dolore animi, hic soluta nam eveniet voluptate? 
                 Beatae, minima natus?</p></td>
         </tr>
-    </table>
-    <hr>
-    <h3>My Location</h3>
-    
+<section >
+</table>
+<hr>
 
-    <footer marign-left="100px">
+<table cellpadding="10" >
+    <tr>
+        <td >
+            <form >
+                <legend>Contact Me</legend>
+                <fieldset>
+                    <table cellspacing="16">
+                        <tr>
+                            <td>First Name</td>
+                            <td> <input type="text" name="fname" required size="45" pattern="*[a-zA-Z]" title="only letters"></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Last Name</td>
+                            <td> <input type="text" name="lname" required size="45" pattern="*[a-zA-Z]" title="at least four characters"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="pwd" required size="45" pattern="(?=.*[0-9](?=.{8,}))" title="should at least be 6 and has at leat one char"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td> <input type="email" name="email" required size="45" pattern="	
+                                ^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="4 to 8 lowercase letters"></td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td><select name="select">
+                                <option value="Addis ">Addis</option>
+                                <option value="Adama">Adama</option>
+                                <option value="iran">Iran</option>
+                                <option value="sudan">Sudan</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Message</td>
+                            <td><textarea name="message" id="1" col="10" row="6"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td> <br> <button>submit</button></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </td>
+        <td>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7880.467643499114!2d38.75379317603326!3d9.042423369568315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6986ec5c0d%3A0x6c50d5181b223b28!2s6%20kilo%20digital%20library!5e0!3m2!1sen!2set!4v1583690520516!5m2!1sen!2set" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </td>
+    </tr>
+</table>
+</section>
+
+    <footer align="center" >
         <h4>social media</h4>
         <a href="http://google.com" target="_blank">google</a>
         <a href="http://facebook.com" target="_blank">facebook</a>
