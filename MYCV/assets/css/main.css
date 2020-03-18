@@ -6,6 +6,7 @@
 body{
     background-color: #F5F5F5;
 }
+/* index page style begin */
 header{
     position: absolute;
     top: 0;
@@ -91,6 +92,84 @@ background-color: rgb(133, 133, 187);;
     text-align: center;
     font-size: larger;
     padding: 20px;
+}
+
+
+
+
+
+
+
+/* contact page style begin */
+.wrapper{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+/* form style */
+
+.form {
+	margin:10px auto;
+	max-width: 500px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form input[type=text], 
+.form input[type=url],
+.form input[type=email],
+textarea, 
+select{
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;	
+}
+.form input[type=text]:focus, 
+.form input[type=url]:focus,
+.form input[type=email]:focus,
+.form textarea:focus, 
+.form select:focus{
+	box-shadow: 0 0 8px rgb(148, 217, 235);
+	border: 1px solid #88D5E9;
+}
+.form .field-divided {
+	width: 49%;
+}
+
+.form .field-long{
+	width: 100%;
+}
+.form select{
+    width: 100%
+}
+.form textarea{
+	height: 100px;
+}
+.form input[type=submit]{
+	background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form input[type=submit]:hover{
+    background-color: rgb(60, 126, 143);
+}
+.form .required{
+	color:red;
+}
+.form .optional{
+    color: grey;
 }
 
 
