@@ -1,85 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Contact</title>
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2016/12/26/13/47/dark-1932208__340.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            padding: 20px;
+        }
+
+        hr {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        .img {
+            float: left;
+            padding-right: 40px;
+
+        }
+
+        .tab,
+        #b {
+            margin-top: 150px;
+        }
+    </style>
 </head>
+
 <body>
     <hr>
-    <a href="index.html" >Home</a> |
-    <a href="contact.html" >Contact</a> |
+    <a href="index.html">Home</a> |
+    <a href="contact.html">Contact</a> |
     <a href="gallery.html">Gallery</a>
     <hr>
-    <table cellspacing="50">
+    <img class="img" height="250" width="200" src="images/rounded_corners.png" alt="car image">
+    <div id="head">
+        <h1>Nabek Abebe</h1>
+        <h3>Student at Addis Ababa Universit</h3>
+        <p>As you create your software developer CV, keep the following tips in mind: – Include a complete list
+            of the languages, environments, and applications in which you are competent and fluent in your
+            skills section. Hiring managers need to know the scope of your knowledge and experience, and this is
+            a critical component.</p>
+    </div>
+
+    <!-- <table cellspacing="50">
         <tr>
-            <td><img height="250" width="200" src="images/rounded_corners.png" alt="car image"></td>
-            <td><h1>Nabek Abebe</h1>
-                <h3>Student at Addis Ababa Universit</h3>
-<p>As you create your software developer CV, keep the following tips in mind: – Include a complete list of the languages, environments, and applications in which you are competent and fluent in your skills section. Hiring managers need to know the scope of your knowledge and experience, and this is a critical component.</p>        </tr>
-<section >
-</table>
-<hr>
+            <td></td>
+            <td>
+                
+        </tr>
+        <section>
+    </table> -->
+    <hr id="b">
 
-<table cellpadding="10" >
-    <tr>
-        <td>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7880.467643499114!2d38.75379317603326!3d9.042423369568315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6986ec5c0d%3A0x6c50d5181b223b28!2s6%20kilo%20digital%20library!5e0!3m2!1sen!2set!4v1583690520516!5m2!1sen!2set" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </td>
-        <td >
-            <form >
-                <legend>Contact Me</legend>
-                <fieldset>
-                    <table cellspacing="16">
-                        <tr>
-                            <td>First Name</td>
-                            <td> <input type="text" name="fname" required size="45" pattern="[a-zA-Z]{4,}" title="Username: only letters with more than 4 charachters"></td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Last Name</td>
-                            <td> <input type="text" name="lname" required size="45" pattern="[a-zA-Z]{4,}" title="Last Name: only letters with more than 4 charachters"></td>
-                        </tr>
-                        <tr>
-                            <td>Password</td>
-                            <td><input type="password" name="pwd" required size="45" pattern="(?=.*[0-9](?=.{8,}))" title="should at least be 6 and has at leat one char"></td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td> <input type="email" name="email" required size="45" pattern="	
+    <table class="tab" cellpadding="10">
+        <tr>
+            <td>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7880.467643499114!2d38.75379317603326!3d9.042423369568315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8f6986ec5c0d%3A0x6c50d5181b223b28!2s6%20kilo%20digital%20library!5e0!3m2!1sen!2set!4v1583690520516!5m2!1sen!2set"
+                    width="500" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </td>
+            <td>
+                <form>
+                    <legend>Contact Me</legend>
+                    <fieldset>
+                        <table cellspacing="16">
+                            <tr>
+                                <td>First Name</td>
+                                <td> <input type="text" name="fname" required size="45" pattern="[a-zA-Z]{4,}"
+                                        title="Username: only letters with more than 4 charachters"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td> <input type="text" name="lname" required size="45" pattern="[a-zA-Z]{4,}"
+                                        title="Last Name: only letters with more than 4 charachters"></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td><input type="password" name="pwd" required size="45" pattern="(?=.*[0-9](?=.{8,}))"
+                                        title="should at least be 6 and has at leat one char"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td> <input type="email" name="email" required size="45" pattern="	
                                 ^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="4 to 8 lowercase letters"></td>
-                        </tr>
-                        <tr>
-                            <td>Website</td>
-                            <td> <input type="url" name="url" required size="45" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"></td>
-                        </tr>
-                        <tr>
-                            <td>Country</td>
-                            <td><select name="select">
-                                <option value="Addis ">Addis</option>
-                                <option value="Adama">Adama</option>
-                                <option value="iran">Iran</option>
-                                <option value="sudan">Sudan</option>
-                            </select></td>
-                        </tr>
-                        <tr>
-                            <td>Message</td>
-                            <td><textarea name="message" id="1" col="10" row="6"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td> <br> <button>submit</button></td>
-                        </tr>
-                    </table>
-                </fieldset>
-            </form>
-        </td>
-    </tr>
-</table>
-</section>
+                            </tr>
+                            <tr>
+                                <td>Website</td>
+                                <td> <input type="url" name="url" required size="45"
+                                        pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td><select name="select">
+                                        <option value="Addis ">Addis</option>
+                                        <option value="Adama">Adama</option>
+                                        <option value="iran">Iran</option>
+                                        <option value="sudan">Sudan</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>Message</td>
+                                <td><textarea name="message" id="1" col="10" row="6"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td> <br> <button>submit</button></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+    </section>
 
-   
+
     <hr>
     <footer>
         <table align="center">
@@ -104,6 +148,7 @@
 
         &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
     </footer>
-<hr>
+    <hr>
 </body>
+
 </html>
