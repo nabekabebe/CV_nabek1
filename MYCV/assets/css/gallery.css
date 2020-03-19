@@ -1,11 +1,6 @@
-
-body{
-    background-image: url("https://cdn.pixabay.com/photo/2016/12/26/13/47/dark-1932208__340.jpg");
-    color: white;
-}
 a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: larger;
 }
 #title{
@@ -18,23 +13,35 @@ a{
     width: 8.3rem;
     padding-bottom: 4px;
     border-collapse: collapse;
-
-    
 }
-#fl {
-    margin-left: 40%;
+#tlt{
+    position: relative;
+    width: fit-content;
+    clear: both;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    left: 40%;
+
 }
 .space{
-    margin-bottom: 40px;
-    
+   width: 100%;
+   position: relative;
+   left: 60px;
 }
 .space img{
+    position: relative;
     float: left;
-    height: 400px;
+    height: 350px;
     width: 30%;
     padding: 1.66%;
 }
-
-.footer{
+footer{
     clear: both;
+    width: 100%;
+    border-top: 1px solid black;
+}
+footer div{
+    text-align: center;
+    padding: 30px;
 }
