@@ -1,5 +1,130 @@
-/* @media (min-width: 1200px){
-nav ul li {
-    background-color: antiquewhite;
+@media (max-width: 640px){
+header{
+width: 100%;
+} 
+header nav{
+    width: 100%;
 }    
-} */
+header li{
+    width: 100%;
+}   
+
+nav ul li {
+    display: block;
+    width: 100%;
+} 
+.title .logo{
+    clear: both;
+    margin-left: 4%;
+    border: none;
+
+}   
+.title .head{
+    width: 33%;
+   
+}
+.separate{
+    border-bottom: 2px solid brown;
+}
+#main{
+    display: block;
+}
+#main .col1{
+    padding: 20px;
+}
+.card{
+    width: 33%;
+    padding: 20px;
+}
+/* for contact page */
+.wrapper{
+    flex-direction: column;
+}
+.map, form{
+    flex: none;
+    margin: 4%;
+}
+.map iframe{
+    width: 40%;
+}
+.form{
+    margin: unset;
+    width: 40%;
+}
+/* for gallery */
+.space div{
+    clear: both;
+}
+.space div img{
+    margin: unset;
+    padding-left: 0%;
+    width: 35%;
+}
+#tlt{
+    left: 15%;
+    text-align: start;
+    padding: 0 0 10px;
+    border: none;
+    width: 40px;
+}
+}
+
+@media screen and (min-width: 640px) and (max-width : 1200px) 
+{
+body,li a{
+    font-size: 0.9em;
+}
+header, footer{
+    margin: unset;
+    text-align: start;
+}
+.container{
+    margin: unset;
+}    
+
+.title .logo{
+    clear: both;
+    margin-left: 20%;
+    border: none;
+
+}
+#main{
+    width: 50%;
+} 
+.title .head{
+    width: 68%;
+}
+
+/* contact page */
+.wrapper{
+    flex-direction: column;
+    margin-left: 10%;
+}
+.container{
+    margin-left: 5%;
+}
+.map{
+    flex: none;
+    width: 70%;
+}
+.map iframe{
+    width: 58%;
+}
+.form{
+    margin: unset;
+    width: 100%;
+}
+
+/* gallery */
+.space img{
+    width: 60%;
+    padding: 3%;
+    height: 500px;
+
+}
+}
+@media (max-width: 768px){
+    .container{
+        margin-left: 0;
+    }
+}
