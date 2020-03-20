@@ -1,0 +1,524 @@
+.flags{
+    display: flex;
+    margin: 10%;
+}
+.marginize{
+    margin: 20px;
+}
+.marginize div p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+    box-shadow:  0 4px 10px;;
+}
+.Armenia {
+width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Arm_colors {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background: linear-gradient(
+    #d90011 calc(100% / 3),
+    #0033a0 calc(100% / 3),
+    #0033a0 calc(100% / 3 * 2),
+    #f2a800 calc(100% / 3 * 2),
+    #f2a800 100%
+  );
+}
+
+.Ethiopia {
+width: 250px;
+  position: relative;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Eth_colors {
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background: linear-gradient(
+    green 33%,
+    yellow 33%,
+    yellow 66%,
+    red 66%,
+    red 100%
+  );
+}
+.Eth_icon1 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: blue;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.Eth_icon2 {
+  position: absolute;
+  top: 32%;
+  left: 57%;
+  color: yellow;
+  font-weight: bold;
+  height: 1px;
+  transform: translate(-50%,-50%);
+  transform: rotate(45deg);
+}
+.Eth_icon3 {
+  position: absolute;
+  top: 32%;
+  left: 42%;
+  height: 1px;
+  color: yellow;
+  font-weight: bold;
+  height: 1px;
+  transform: translate(-50%,-50%);
+  transform: rotate(-45deg);
+}
+.Eth_icon4 {
+  position: absolute;
+  top: 62%;
+  left: 60%;
+  height: 1px;
+  color: yellow;
+  font-weight: bold;
+  height: 1px;
+  transform: translate(-50%,-50%);
+  transform: rotate(120deg);
+}
+.Eth_icon5 {
+  position: absolute;
+  top: 62%;
+  left: 38%;
+  height: 1px;
+  color: yellow;
+  font-weight: bold;
+  height: 1px;
+  transform: translate(-50%,-50%);
+  transform: rotate(-118deg);
+}
+.Eth_icon6 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  height: 1px;
+  color: yellow;
+  font-weight: bold;
+  height: 1px;
+  transform: translate(-50%,-50%);
+
+}
+.Eth_icon7 img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 40px;
+  height: 40px;
+}
+.Monaco{
+    width: 250px;
+    border: #792d2d;
+    box-shadow: 0 4px 10px;
+}
+.Mo_colors{
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    border: 1px solid #efefef;
+    background: linear-gradient(
+      #ff0000 50%,
+      #ffffff 50%,
+      #ffffff 100%
+    );
+}
+.Kuwait {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Kuw_colors {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background: linear-gradient(
+    #2fc20a calc(100% / 3),
+    #ffffff calc(100% / 3),
+    rgb(255, 255, 255) calc(100% / 3 * 2),
+    #ff0000 calc(100% / 3 * 2),
+    #ff0000 100%
+  );
+}
+.Kuw_icon {
+  position: absolute;
+  border-left: 60px solid black;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+
+  height: 120px;
+  width: 0px;
+}
+
+.Tunisia {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Tun_colors {
+  background-color: #ff0000;
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+}
+.Tun_icon1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: white;
+}
+.Tun_icon2 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: red;
+}
+.Tun_icon3 {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 49%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1;
+}
+.Tun_icon4 {
+  position: absolute;
+  top: 49%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.Tun_icon4 img {
+  width: 15px;
+}
+
+.Israel {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Is_colors {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background: linear-gradient(
+    white 10%,
+    blue 10%,
+    blue 30%,
+    white 30%,
+    white 70%,
+    blue 70%,
+    blue 90%,
+    white 90%,
+    white 100%
+  );
+}
+.Is_icon {
+  position: absolute;
+  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Solomon_Islands {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Sol_colors {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background-color: orange;
+}
+.Sol_icon1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 113px solid blue;
+  border-right: 226px solid transparent;
+}
+.Sol_icon2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 113px solid green;
+  border-left: 226px solid transparent;
+}
+.Sol_icon3 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.Sol_icon4 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.Sol_icon5 {
+  position: absolute;
+  left: 20%;
+  top: 5%;
+}
+.Sol_icon6 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+.Sol_icon7 {
+  position: absolute;
+  left: 12%;
+  top: 15%;
+}
+
+.Norway {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Nor_colors {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background-color: blue;
+}
+.Nor_icon1 {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  box-shadow: 0px 0px 0px 8px;
+}
+.Nor_icon2 {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  box-shadow: 0px 0px 0px 8px;
+}
+.Nor_icon3 {
+  position: absolute;
+  right: 0;
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  box-shadow: 0px 0px 0px 8px;
+}
+.Nor_icon4 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  box-shadow: 0px 0px 0px 8px;
+}
+
+.North_Korea {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.NK_colors {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background: linear-gradient(blue 20%, red 20%, red 80%, blue 80%, blue 100%);
+}
+.NK_icon1 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: white;
+}
+.NK_icon1 img {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 40px;
+  height: 40px;
+  transform: rotate(36deg);
+}
+.NK_icon2 {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  height: 40px;
+}
+
+.Malawi {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Mal_colors {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background: linear-gradient(
+    #000000 calc(100% / 3),
+    #ff0000 calc(100% / 3),
+    #ff0000 calc(100% / 3 * 2),
+    #009e22 calc(100% / 3 * 2),
+    #009e22 100%
+  );
+}
+.Mal_icon1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 0px 0px 0px 5px;
+  z-index: 1;
+}
+.Mal_icon2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: red;
+}
+.Mal_icon3 {
+  position: absolute;
+  width: 600px;
+  height: 40px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  box-shadow: 0px -3px;
+  z-index: 1;
+}
+
+.Liberia {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Lb_colors {
+  position: relative;
+  height: 120px;
+  border: 1px solid #efefef;
+  background-image: repeating-linear-gradient(
+    red,
+    red 10px,
+    white 10px,
+    white 20px /* determines size */
+  );
+}
+.Lb_icon1 {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 1;
+  font-size: 30px;
+}
+.Lb_icon2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+
+.Libya {
+    width: 250px;
+  border: #792d2d;
+  box-shadow: 0 4px 10px;
+}
+.Lib_colors {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  background: linear-gradient(
+    #d90011 calc(100% / 3),
+    #000000 calc(100% / 3),
+    #000000 calc(100% / 3 * 2),
+    #009e22 calc(100% / 3 * 2),
+    #009e22 100%
+  );
+}
+.Lib_icon1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: white;
+}
+.Lib_icon2 {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 50%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: black;
+  z-index: 1;
+}
+.Lib_icon3 {
+  position: absolute;
+  top: 43%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transform-origin: center;
+  transform: rotate(40deg);
+  z-index: 1;
+  font-size: small;
+}

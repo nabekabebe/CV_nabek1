@@ -43,7 +43,7 @@ nav ul li:nth-child(1){
 background-color: rgb(133, 133, 187);;
 }
 .container{
-    width: 1200px;
+    width: 60%;
     margin: 0 auto;
     align-items: center;
     min-height: calc(100vh - 145px);
@@ -182,7 +182,29 @@ select{
     color: grey;
 }
 
+/* my work page */
 
+.area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(204, 202, 200);
+}
+.area li a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-size: 30px;
+}
+.area li{
+    list-style: none;
+    float: left;
+    transition: all 1s;
+}
+.area li:hover{
+    background-color: coral;
+}
 
 
 
