@@ -126,24 +126,22 @@
                     The CSS pixel is a ‘reference’ pixel, not a device pixel. But once one understands that a ‘px’ is
                     actually a
                     reference, not a device pixel, things make more sense. CSS px is an abstract unit and
-                    there is a ratio controlling how it maps to actual device pixels and to physical units.
-
-                    These pixels have nothing to do with the actual pixel density of the device. They’re essentially an
-                    abstract construct created specifically for us web developers. </p>
+                    there is a ratio controlling how it maps to actual device pixels and to physical units. </p><br>
                 <p>
                     If the user zooms in, an element with width: 200px takes up more and more of the screen, and thus
                     becomes wider and wider when measured in device
                     (physical) pixels. In CSS pixels, however, the width remains 200px, and the zooming effect is
                     created by
-                    expanding CSS pixels as much as is needed.
-
+                    expanding CSS pixels as much as is needed.</p><br>
+<p>
                     Hence, unless the 200px is expressed in relational units like rem or em, the 200px will be rendered
-                    as
-                    it is on the browser.
+                    as it is on the browser.
                     But is the 200px length is expressed in above mentioned relational units, the browser will render
-                    the
-                    lenght in relation to the
+                    the lenght in relation to the
                     16px default browser-font-size.
+
+                    The 200px size is 12.5 times 16px size. Since the default 16px size is taken as 100% percent on the browser, the 
+                    item with 200px size woould be rendered as being 12.5 times the size of the default length.
                 </p>
             </div>
             </article>
@@ -291,8 +289,9 @@
                 <h3>
                     Selectors
                 </h3>
+
                 <p>
-                    
+                  Few powerful selectors have been introduced in css3 to make styling easier and specific. 
                     <ul>
                         <li>Dynamic pseudo-classes</li>
                         <li>The target pseudo-class</li>

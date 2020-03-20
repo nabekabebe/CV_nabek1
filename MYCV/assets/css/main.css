@@ -125,6 +125,9 @@ background-color: rgb(133, 133, 187);;
     width: 500px;
     height: 400px;
 }
+#fr{
+    width: 100px;
+}
 /* form style */
 
 .form {
