@@ -11,6 +11,36 @@
 <style>
     .wrap_content {
         margin: 20px;
+        background-color: aliceblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2,
+    .wrap_content p h3 {
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .wrap_content h3 {
+        padding: 10px 0;
+    }
+
+    .wrap_content p {
+        padding: 2px;
+        line-height: 25px;
+    }
+
+    .wrap_content article {
+        padding: 40px;
+        box-shadow: 0px 1px 1px 5px brown;
+    }
+    ul{
+        padding-left: 30px;
+    }
+    .answers{
+        background-color: beige;
+        margin: 5px;
+        padding: 2px;
     }
 </style>
 
@@ -30,185 +60,252 @@
 
     <div class="container">
         <div class="wrap_content">
-            <h2>Q1. Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element
-                isresponsive ? why ?</h2>
+            <article>
+                <h2>Q1. Does it matter to use relative size(%,em,rem) one styling the size of an element so that the
+                    element
+                    isresponsive ? why ?</h2>
 
-            <p>Earlier versions of today’s browsers had limited features, and we had to consider how to work with — or
-                around— those when designing and developing our sites. Static and adaptive layouts were commonplace, and
-                our sites were designed to pixel perfection. </p> <br>
+                <div class="answers">
+                    <p>Earlier versions of today’s browsers had limited features, and we had to consider how to work with —
+                        or
+                        around— those when designing and developing our sites. Static and adaptive layouts were commonplace,
+                        and
+                        our sites were designed to pixel perfection. </p> <br>
+    
+                    <p> There are a couple of reasons to use unitless scales. Of course we can set everything in pixels, but
+                        if
+                        we
+                        want to make something responsive, we usually need to overwrite more values. And another, maybe more
+                        important, reason: some people will have their browser font size set to something else than the
+                        default
+                        16px, for example people who are visually impaired. </p><br>
+    
+                    <p> The other reason for using responsive and unitless values in our CSS is for supporting our
+                        users that rely on zooming. Our users need to be
+                        able to zoom the viewport without loss of content or functionality, or restrictions imposed by CSS
+                        values or viewport scaling settings.
+                        Zooming allowed us users to zoom everything on the page by
+                        scaling up and down proportionally depending on our preferences. But as browsers handle page zoom
+                        for
+                        us,
+                        there is a difference in how the the UI appears when the page is zoomed depending on the weather the
+                        default
+                        browser size has been adjested as well. </p><br>
+    
+    
+                    <p> Relative css units and unitless
+                        values like (%,em, rem) are used in our css to meet the needs of ever-changing viewport sizes.
+                        Since giving units in this way will enables us to zoom the viewport without loss of the content and
+                        resize text without
+                        being forced to scroll both horizontally and vertically to read the content. </p><br>
+    
+    
+                    <p> Hence, I prefer to use rem for font-sizes, em for margins and paddings and px for borders. I still
+                        use
+                        pixels
+                        when it comes to borders, because I usually want a border to be just a fine, 1px line.
+                        By using em for margins and paddings, they will increase when you increase the font size of your
+                        element: perfect responsiveness. Most times, a font size on a smartphone can be smaller than on a
+                        larger
+                        display. If you set a higher root size for the latter, everything will scale proportionally.</p>
+                </div>    
 
-            <p> There are a couple of reasons to use unitless scales. Of course we can set everything in pixels, but if
-                we
-                want to make something responsive, we usually need to overwrite more values. And another, maybe more
-                important, reason: some people will have their browser font size set to something else than the default
-                16px, for example people who are visually impaired. </p><br>
-
-            <p> The other reason for using responsive and unitless values in our CSS is for supporting our
-                users that rely on zooming. Our users need to be
-                able to zoom the viewport without loss of content or functionality, or restrictions imposed by CSS
-                values or viewport scaling settings.
-                Zooming allowed us users to zoom everything on the page by
-                scaling up and down proportionally depending on our preferences. But as browsers handle page zoom for
-                us,
-                there is a difference in how the the UI appears when the page is zoomed depending on the weather the
-                default
-                browser size has been adjested as well. </p><br>
-
-
-            <p> Relative css units and unitless
-                values like (%,em, rem) are used in our css to meet the needs of ever-changing viewport sizes.
-                Since giving units in this way will enables us to zoom the viewport without loss of the content and
-                resize text without
-                being forced to scroll both horizontally and vertically to read the content. </p><br>
-
-
-            <p> Hence, I prefer to use rem for font-sizes, em for margins and paddings and px for borders. I still use
-                pixels
-                when it comes to borders, because I usually want a border to be just a fine, 1px line.
-                By using em for margins and paddings, they will increase when you increase the font size of your
-                element: perfect responsiveness. Most times, a font size on a smartphone can be smaller than on a larger
-                display. If you set a higher root size for the latter, everything will scale proportionally.</p> <br>
-
-
-                
-
-            <h2>Q2. 16px is default browser width so what does it mean when we say 200px ? How does the browser
-                interprets
-                that ? </h2>
-            <p>kbdjsd</p>
+               
+                <br>
 
 
 
-            <h2>Q3. Explain in detail(in technical terms) the specific changes in css3 </h2>
-            <p>
-                The biggest difference between CSS2 and CSS3 is that CSS3 is now split into different modules. Since
-                each module makes its way through the W3C individually, there’s a wider range of browser support.
-            </p>
-            <p>
+
+
+            </article>
+            <article>
+                <h2>Q2. 16px is default browser width so what does it mean when we say 200px ? How does the browser
+                    interprets that ? </h2>
+                    <div class="answers">
+                <p>
+                    The CSS pixel is a ‘reference’ pixel, not a device pixel. But once one understands that a ‘px’ is
+                    actually a
+                    reference, not a device pixel, things make more sense. CSS px is an abstract unit and
+                    there is a ratio controlling how it maps to actual device pixels and to physical units.
+
+                    These pixels have nothing to do with the actual pixel density of the device. They’re essentially an
+                    abstract construct created specifically for us web developers. </p>
+                <p>
+                    If the user zooms in, an element with width: 200px takes up more and more of the screen, and thus
+                    becomes wider and wider when measured in device
+                    (physical) pixels. In CSS pixels, however, the width remains 200px, and the zooming effect is
+                    created by
+                    expanding CSS pixels as much as is needed.
+
+                    Hence, unless the 200px is expressed in relational units like rem or em, the 200px will be rendered
+                    as
+                    it is on the browser.
+                    But is the 200px length is expressed in above mentioned relational units, the browser will render
+                    the
+                    lenght in relation to the
+                    16px default browser-font-size.
+                </p>
+            </div>
+            </article>
+
+            <article>
+                <h2>Q3. Explain in detail(in technical terms) the specific changes in css3 </h2>
+                <div class="answers">
+                <p>
+                    The biggest difference between CSS2 and CSS3 is that CSS3 is now split into different modules. Since
+                    each module makes its way through the W3C individually, there’s a wider range of browser support.
+                </p>
                 <h3>Backword compatible</h3>
-                CSS3 is backword compatible with CSS2. It will not make any code written in CSS2 as invalid. it makes
-                the look and feel of a webpage even better. They load faster and the time required to build a page is
-                even
-                less.
-            </p>
-            <p>
+                <p>
+                    
+                    CSS3 is backword compatible with CSS2. It will not make any code written in CSS2 as invalid. it
+                    makes
+                    the look and feel of a webpage even better. They load faster and the time required to build a page
+                    is
+                    even
+                    less.
+                </p>
                 <h3>
                     Multiple Backgrounds
                 </h3>
+                <p>
+                    
 
-                Background-image, background-position and background-repeat can now be used to specify multiple
-                background images to be layered on top of one another. The first image being closest to the user, with
-                the following image layered behind. If there is a background color, it’s painted below all the image
-                layers.
-            </p>
-            <p>
+                    Background-image, background-position and background-repeat can now be used to specify multiple
+                    background images to be layered on top of one another. The first image being closest to the user,
+                    with
+                    the following image layered behind. If there is a background color, it’s painted below all the image
+                    layers.
+                </p>
                 <h3>
                     New Background Style Properties
                 </h3>
+                <p>
+                    
 
 
-                Background-clip: how the background image should be clipped.
-                Background-origin: whether a background should be placed in the padding box, the border box, or the
-                content box.
-                Background-size: determines the size of the background image. This allows stretching smaller images to
-                fit a page.
-            </p>
-
-            <p>
+                    Background-clip: how the background image should be clipped.
+                    Background-origin: whether a background should be placed in the padding box, the border box, or the
+                    content box.
+                    Background-size: determines the size of the background image. This allows stretching smaller images
+                    to
+                    fit a page.
+                </p>
                 <h3>
                     Box Sizing
                 </h3>
+                <p>
+                    
 
-                Box-sizing allows developers to get the sizing of elements right without having to subtract dimensions
-                for
-                padding and borders. With the box-sizing property, the padding and border are included in the height and
-                width.
-            </p>
-            <p>
+                    Box-sizing allows developers to get the sizing of elements right without having to subtract
+                    dimensions
+                    for
+                    padding and borders. With the box-sizing property, the padding and border are included in the height
+                    and
+                    width.
+                </p>
                 <h3>
                     RGBA colors
                 </h3>
+                <p>
+                    
 
-                RGBA works just like RGB, except that it adds a fourth value: alpha, the opacity level or alpha
-                transparency
-                level. The first three values still represent red, green, and blue. For the alpha value, 1 means fully
-                opaque, 0 is fully transparent, and 0.5 is 50% opaque. You can use any number between 0 and 1
-                inclusively.
-                HSL stands for hue, saturation, and lightness. With HSL you can tweak either just the saturation or the
-                lightness while keeping the same base hue.
-                OPacity sets the opaqueness of the element on which it’s declared, similar to alpha.
-            </p>
-            <p>
+                    RGBA works just like RGB, except that it adds a fourth value: alpha, the opacity level or alpha
+                    transparency
+                    level. The first three values still represent red, green, and blue. For the alpha value, 1 means
+                    fully
+                    opaque, 0 is fully transparent, and 0.5 is 50% opaque. You can use any number between 0 and 1
+                    inclusively.
+                    HSL stands for hue, saturation, and lightness. With HSL you can tweak either just the saturation or
+                    the
+                    lightness while keeping the same base hue.
+                    OPacity sets the opaqueness of the element on which it’s declared, similar to alpha.
+                </p>
                 <h3>
                     2D and 3D transformations, animations, and transitions
                 </h3>
+                <p>
+                   
 
-                These effects allow elements on a page to rotate, grow, shrink, flip, or translate into a different
-                color.
-                Elements created in CSS can move on screen without requiring any JavaScript or Flash
-                code. With transitions, an element can seamlessly change size and color. You can set a duration for a
-                transition, e.g. creating a button that slowly expands and changes color when you mouse over it.
-            </p>
-            <p>
+                    These effects allow elements on a page to rotate, grow, shrink, flip, or translate into a different
+                    color.
+                    Elements created in CSS can move on screen without requiring any JavaScript or Flash
+                    code. With transitions, an element can seamlessly change size and color. You can set a duration for
+                    a
+                    transition, e.g. creating a button that slowly expands and changes color when you mouse over it.
+                </p>
+
                 <h3>
                     FLEXBOX
                 </h3>
+                <p>
+                   
 
-                The CSS3 flexbox feature makes it much easier for web developers to arrange HTML elements vertically or
-                horizontally. Website layouts designed with flexbox can respond to users with various screen widths,
-                including mobile devices.
-            </p>
-
-            <p>
+                    The CSS3 flexbox feature makes it much easier for web developers to arrange HTML elements vertically
+                    or
+                    horizontally. Website layouts designed with flexbox can respond to users with various screen widths,
+                    including mobile devices.
+                </p>
                 <h3>
                     Border
                 </h3>
-                Border Properties Borders are still what we’re used to (solid, double, dashed, etc.). Now you can create
-                rounded corners.
-            </p>
-            <p>
+                <p>
+                   
+                    Border Properties Borders are still what we’re used to (solid, double, dashed, etc.). Now you can
+                    create
+                    rounded corners.
+                </p>
                 <h3>
                     Box Shadow
                 </h3>
+                <p>
+                    
 
-                It provides the ability to add drop shadows to elements using the box-shadow property. This property
-                lets
-                you specify the color, height, width, blur, and offset of one or multiple inner and/or outer drop
-                shadows on
-                your elements.
-            </p>
-            <p>
+                    It provides the ability to add drop shadows to elements using the box-shadow property. This property
+                    lets
+                    you specify the color, height, width, blur, and offset of one or multiple inner and/or outer drop
+                    shadows on
+                    your elements.
+                </p>
                 <h3>
                     Gradients
                 </h3>
+                <p>
+                    
 
-                The linear-gradient() function sets a linear gradient as the background image.
-                To create a linear gradient you must define at least two color stops. Color stops are the colors you
-                want to
-                render smooth transitions among.
+                    The linear-gradient() function sets a linear gradient as the background image.
+                    To create a linear gradient you must define at least two color stops. Color stops are the colors you
+                    want to
+                    render smooth transitions among.
 
-                Radial gradients are circular or elliptical gradients. Rather than proceeding along a straight axis,
-                colors blend out from a starting point in all directions.
-            </p>
-            <p>
+                    Radial gradients are circular or elliptical gradients. Rather than proceeding along a straight axis,
+                    colors blend out from a starting point in all directions.
+                </p>
                 <h3>
                     Text Shadow
                 </h3>
-                text-shadow adds shadows to individual characters in text nodes.
-            </p>
-            <p>
+                <p>
+                   
+                    text-shadow adds shadows to individual characters in text nodes.
+                </p>
                 <h3>
                     Selectors
                 </h3>
-                <ul>
-                    <li>Dynamic pseudo-classes</li>
-                    <li>The target pseudo-class</li>
-                    <li>The language pseudo-class</li>
-                    <li>The UI element states pseudo-classes</li>
-                    <li>Structural pseudo-classes</li>
-                    <li>The negation pseudo-class</li>
-                </ul>
-            </p>
+                <p>
+                    
+                    <ul>
+                        <li>Dynamic pseudo-classes</li>
+                        <li>The target pseudo-class</li>
+                        <li>The language pseudo-class</li>
+                        <li>The UI element states pseudo-classes</li>
+                        <li>Structural pseudo-classes</li>
+                        <li>The negation pseudo-class</li>
+                    </ul>
+                </p>
+                </div>
+            </article>
+
+
         </div>
     </div>
     <div class="footer_div">
