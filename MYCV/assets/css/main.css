@@ -43,7 +43,7 @@ nav ul li:nth-child(1){
 background-color: rgb(133, 133, 187);;
 }
 .container{
-    width: 60%;
+    width: 1200px;
     margin: 0 auto;
     align-items: center;
     min-height: calc(100vh - 145px);
@@ -60,6 +60,10 @@ background-color: rgb(133, 133, 187);;
     margin-top: 100px;
     padding-bottom: 10px;
     border-bottom: 3px solid rgb(163, 73, 73);
+}
+.title .logo img{
+    width: 250px;
+    height: 250px;
 }
 .head h1{
     text-align: center;
@@ -116,6 +120,10 @@ background-color: rgb(133, 133, 187);;
 }
 .map{
     flex: 1;
+}
+.map iframe{
+    width: 500px;
+    height: 400px;
 }
 /* form style */
 

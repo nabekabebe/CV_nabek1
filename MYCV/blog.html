@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/mediaQ.css" type="text/css">
     <title>Blog</title>
 </head>
+<style>
+    .wrap_content {
+        margin: 20px;
+    }
+</style>
 
 <body>
     <!-- start -->
@@ -23,10 +29,60 @@
     </header>
 
     <div class="container">
+        <div class="wrap_content">
+            <h2>Q1. Does it matter to use relative size(%,em,rem) one styling the size of an element so that the element
+                isresponsive ? why ?</h2>
 
+            <p>Earlier versions of today’s browsers had limited features, and we had to consider how to work with — or
+                around— those when designing and developing our sites. Static and adaptive layouts were commonplace, and
+                our sites were designed to pixel perfection. </p> <br>
+
+            <p> There are a couple of reasons to use unitless scales. Of course we can set everything in pixels, but if
+                we
+                want to make something responsive, we usually need to overwrite more values. And another, maybe more
+                important, reason: some people will have their browser font size set to something else than the default
+                16px, for example people who are visually impaired. </p><br>
+
+            <p> The other reason for using responsive and unitless values in our CSS is for supporting our
+                users that rely on zooming. Our users need to be
+                able to zoom the viewport without loss of content or functionality, or restrictions imposed by CSS
+                values or viewport scaling settings.
+                Zooming allowed us users to zoom everything on the page by
+                scaling up and down proportionally depending on our preferences. But as browsers handle page zoom for
+                us,
+                there is a difference in how the the UI appears when the page is zoomed depending on the weather the
+                default
+                browser size has been adjested as well. </p><br>
+
+
+            <p> Relative css units and unitless
+                values like (%,em, rem) are used in our css to meet the needs of ever-changing viewport sizes.
+                Since giving units in this way will enables us to zoom the viewport without loss of the content and
+                resize text without
+                being forced to scroll both horizontally and vertically to read the content. </p><br>
+
+
+            <p> Hence, I prefer to use rem for font-sizes, em for margins and paddings and px for borders. I still use
+                pixels
+                when it comes to borders, because I usually want a border to be just a fine, 1px line.
+                By using em for margins and paddings, they will increase when you increase the font size of your
+                element: perfect responsiveness. Most times, a font size on a smartphone can be smaller than on a larger
+                display. If you set a higher root size for the latter, everything will scale proportionally.</p> <br>
+
+
+
+
+            <h2>Q2. 16px is default browser width so what does it mean when we say 200px ? How does the browser
+                interprets
+                that ? </h2>
+            <p>kbdjsd</p>
+
+
+
+            <h2>Q3. Explain in detail(in technical terms) the specific changes in css3 </h2>
+            
+        </div>
     </div>
-
-
     <div class="footer_div">
         <footer>
             <div class="medias">

@@ -1,7 +1,9 @@
-@media (max-width: 640px){
-header{
-width: 100%;
-} 
+@media screen and (max-width: 640px){
+.container{
+        width: unset;
+        margin: unset;
+        align-items: unset;
+}    
 header nav{
     width: 100%;
 }    
@@ -12,40 +14,56 @@ header li{
 nav ul li {
     display: block;
     width: 100%;
+    text-align: center;
 } 
 .title .logo{
     clear: both;
-    margin-left: 4%;
     border: none;
-
 }   
+.title .logo img{
+    position: relative;
+}
 .title .head{
-    width: 33%;
-   
+    display: inline-block;
+    margin-left: 50px;
+}
+.title .head h1{
+text-align: center;
 }
 .separate{
+    width: 100%;
     border-bottom: 2px solid brown;
 }
 #main{
     display: block;
+    width: 100%;
+    margin-left: 20px;
 }
 #main .col1{
     padding: 20px;
+    padding-left: 40px;  
+}
+.main .col2{
+    width: 100%;
 }
 .card{
-    width: 33%;
-    padding: 20px;
+    width: 22em;
+    
 }
 /* for contact page */
 .wrapper{
-    flex-direction: column;
+    display: block;
+}
+.map{
+    width: 300px;
 }
 .map, form{
-    flex: none;
+    flex: unset;
     margin: 4%;
 }
 .map iframe{
-    width: 40%;
+    width: 200px;
+    height: 200px;
 }
 .form{
     margin: unset;
@@ -57,8 +75,9 @@ nav ul li {
 }
 .space div img{
     margin: unset;
-    padding-left: 0%;
-    width: 35%;
+    padding-left: 0;
+    width: 260px;
+    height: 250px;
 }
 #tlt{
     left: 15%;
@@ -67,20 +86,52 @@ nav ul li {
     border: none;
     width: 40px;
 }
+.flags{
+    display: block;
+}
+.container{
+    position: relative;
+}
+.wrapper1{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    margin: 5%;
+    padding: 5%;
+
+}
+.container1{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container1 .wd{
+    width: 100px;
+    height: 100px;
+    
+}
 }
 
-@media screen and (min-width: 640px) and (max-width : 1200px) 
+@media screen and (max-width : 700px) and (max-width : 1200px) 
 {
+    .container{
+        width: unset;
+        margin:unset;
+
+    
+    }
 body,li a{
     font-size: 0.9em;
 }
 header, footer{
     margin: unset;
-    text-align: start;
+    text-align: center;
+
 }
-.container{
-    margin: unset;
-}    
+  
 
 .title .logo{
     clear: both;
@@ -100,9 +151,6 @@ header, footer{
     flex-direction: column;
     margin-left: 10%;
 }
-.container{
-    margin-left: 5%;
-}
 .map{
     flex: none;
     width: 70%;
@@ -116,15 +164,12 @@ header, footer{
 }
 
 /* gallery */
+.space div{
+    clear: both;
+}
 .space img{
     width: 60%;
     padding: 3%;
     height: 500px;
-
 }
-}
-@media (max-width: 768px){
-    .container{
-        margin-left: 0;
-    }
 }
